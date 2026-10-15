@@ -94,4 +94,6 @@ The workshop was offered through NPTEL+. The Python scripts and setup instructio
 
 No open-source license is added: this repository does not grant rights to instructor-owned material. Original authors retain their rights.
 
+Repository organization and documentation were prepared with assistance from OpenAI Codex.
+
 The local virtual environment and generated Python caches are excluded. Source scripts, the three sample logs, and both text records are preserved unchanged.

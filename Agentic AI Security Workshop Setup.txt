@@ -1,0 +1,63 @@
+STEP 1 — INSTALL OLLAMA
+Download and install Ollama for Windows:
+https://ollama.com/download/windows
+Verify: ollama --version
+
+STEP 2 — DOWNLOAD LOCAL MODEL
+ollama pull llama3.2:3b
+Verify: ollama list
+
+STEP 3 — RUN LOCAL LLM
+ ollama run llama3.2:3b
+ Test with a question.
+ Exit the model:
+ /bye
+
+STEP 4 — CHECK MODEL EXECUTION
+ ollama ps
+
+STEP 5 — CHECK OLLAMA API 
+Invoke-RestMethod -Uri http://localhost:11434/api/tags
+
+STEP 6 — CHECK LOCAL NETWORK BINDING
+Get-NetTCPConnection -LocalPort 11434
+
+Expected: 127.0.0.1 11434 ... Listen
+
+
+STEP 7 — INSTALL PYTHON
+ Install Python 3.14.x.
+ https://www.python.org/downloads/windows/
+ Verify: py –version
+ Install pip: python -m ensurepip --upgrade
+ Verify pip: py -m pip –version
+ Installing requests:  python -m pip install requests
+
+STEP 8 — CREATE WORKSHOP FOLDER
+mkdir "$HOME\Desktop\AI-Security-Workshop"
+cd "$HOME\Desktop\AI-Security-Workshop"
+Verify: pwd
+
+STEP 9 — CREATE PYTHON VIRTUAL ENVIRONMENT
+py -3.13 -m venv .venv
+Verify: dir
+Expected: .venv
+
+STEP 10 — ACTIVATE VIRTUAL ENVIRONMENT
+If PowerShell blocks script execution:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+Then: .venv\Scripts\Activate.ps1
+ Verify: python --version
+Expected: Python 3.14.x
+The prompt should begin with: .venv
+
+STEP 11 — VERIFY VIRTUAL-ENVIRONMENT PIP
+python -m pip --version
+The path should contain: AI-Security-Workshop.venv\
+
+STEP 12 — INSTALL OLLAMA PYTHON CLIENT
+python -m pip install ollama
+Verify: python -m pip show ollama
+
+
+

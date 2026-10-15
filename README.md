@@ -1,6 +1,8 @@
-# AI Security Workshop
+# Agentic AI for Cyber Security: Building Autonomous Security Assistants
 
-My hands-on learning record from a workshop on **Agentic AI in Cyber Security** and **Multi-Agent Security Automation**. This repository preserves instructor-provided Python exercises, setup instructions, sample logs, and my PowerShell execution transcript.
+My hands-on learning record from the NPTEL+ workshop **Agentic AI for Cyber Security: Building Autonomous Security Assistants**, covering **Agentic AI in Cyber Security** and **Multi-Agent Security Automation**. This repository preserves instructor-provided Python exercises, setup instructions, sample logs, and my PowerShell execution transcript.
+
+[Official NPTEL+ workshop page](https://elearn.nptel.ac.in/product-page/agentic-ai-for-cyber-security-building-autonomous-security-assistants)
 
 The exercises progress from a basic tool-calling agent to a multi-agent Security Operations Centre (SOC) assistant using Ollama, CVE enrichment, MITRE ATT&CK context, and prompt-injection checks.
 
@@ -88,7 +90,7 @@ The transcript preserves installation issues, model responses, and failures obse
 
 ## Attribution
 
-The Python scripts and setup instructions were supplied by the workshop instructor. My contribution here is executing the exercises, retaining the PowerShell learning record, and organizing/documenting this repository. Instructor and workshop-provider names were not included in the supplied material.
+The workshop was offered through NPTEL+. The Python scripts and setup instructions were supplied by the workshop instructor. My contribution here is executing the exercises, retaining the PowerShell learning record, and organizing/documenting this repository. This is my personal workshop learning repository and is not an official NPTEL+ repository.
 
 No open-source license is added: this repository does not grant rights to instructor-owned material. Original authors retain their rights.
 
